@@ -1,6 +1,6 @@
 # v-dollar
 
-jQuery-like Vue Reactivity API ( & TypeScript well typed )
+jQuery-like Vue Reactivity API `well-typed!`
 
 ```bash
 npm i v-dollar
