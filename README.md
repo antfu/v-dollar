@@ -44,6 +44,20 @@ const double = () => counter.value = unref(doubled)
 watch(counter, (value) => console.log(value), { flush: 'post' })
 ```
 
+Or if you prefer this 😈: 
+
+```ts
+import { $ as _ } from 'v-dollar'
+
+const counter = _(0)
+const doubled = _(() => _(counter) * 2)
+
+const reset = () => _(counter, 0)
+const double = () => _(counter, doubled)
+
+_(counter, (value) => console.log(value), { flush: 'post' })
+```
+
 ## Why?
 
 FUN.
