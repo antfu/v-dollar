@@ -1,6 +1,6 @@
 # v-dollar
 
-jQuery-like Vue Reactivity API `well-typed!`
+jQuery-like Vue Reactivity API , it's well-typed!
 
 ```bash
 npm i v-dollar
@@ -26,7 +26,6 @@ const doubled = $(() => $(counter) * 2)
 
 const reset = () => $(counter, 0)
 const double = () => $(counter, doubled)
-const inc = () => counter.value += 1
 
 $(counter, (value) => console.log(value), { flush: 'post' })
 ```
@@ -41,7 +40,6 @@ const doubled = computed(() => counter.value * 2)
 
 const reset = () => counter.value = 0
 const double = () => counter.value = unref(doubled)
-const inc = () => counter.value += 1
 
 watch(counter, (value) => console.log(value), { flush: 'post' })
 ```
@@ -50,7 +48,7 @@ watch(counter, (value) => console.log(value), { flush: 'post' })
 
 FUN.
 
-It's just a toy, don't take it seriously. But yeah, you can use it in prod if you like :p
+Don't take it seriously, it's just a toy. But yeah, you can use it in prod if you like, we have nearly 100% test coverage :p
 
 ## License
 
